@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('paint_jobs');
 });
+
+
+Route::get('/auto_paint', function () {
+    return view('auto_paint');
+})->name('auto_paint');
+
+Route::get('/paint_jobs', function () {
+    return view('paint_jobs');
+})->name('paint_jobs');
